@@ -1,0 +1,76 @@
+{
+    "name": "Alpha Vantage",
+    "description": "<p>Composed of a tight-knit community of researchers, engineers, and business professionals, Alpha Vantage Inc. is a leading provider of free APIs for realtime and historical data on stocks, physical currencies, and digital\/crypto currencies. Our success is driven by rigorous research, cutting edge technology, and a disciplined focus on democratizing access to data.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2018-01-22 at 4.52.35 PM.png",
+    "tags": [
+        "api provider",
+        "blockchain",
+        "blockchains",
+        "free tier",
+        "have api",
+        "have api key",
+        "market data",
+        "no api definition",
+        "relative data",
+        "stocks"
+    ],
+    "created": "2019-12-18",
+    "modified": "2019-12-18",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/alpha-vantage\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Alpha Vantage",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2018-01-22 at 4.52.35 PM.png",
+            "humanURL": "https:\/\/www.alphavantage.co",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/alpha-vantage.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/alpha-vantage-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/alpha-vantage-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Command Line Interface",
+            "url": "https:\/\/www.npmjs.com\/package\/alpha-vantage-cli"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/www.alphavantage.co\/documentation\/"
+        },
+        {
+            "type": "Forums",
+            "url": "https:\/\/www.alpha-vantage.community\/"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/www.alphavantage.co\/support\/#api-key"
+        },
+        {
+            "type": "Support",
+            "url": "https:\/\/www.alphavantage.co\/support\/#support"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/www.alphavantage.co\/terms_of_service\/"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.alphavantage.co"
+        }
+    ]
+}
