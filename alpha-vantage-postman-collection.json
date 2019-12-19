@@ -1,0 +1,973 @@
+{
+    "id": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+    "name": "Alpha Vantage",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3b93c67569c98d83d45ff8e91da69a8c",
+            "name": "Intraday Time Series",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_INTRADAY",
+            "description": "This API returns intraday time series (timestamp, open, high, low, close, volume) of the equity specified, updated realtime.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "outputsize",
+                    "description": "By default, outputsize=compact. Strings compact and full are accepted with the following specifications: compact returns only the latest 100 data points in the intraday time series; full returns the full-length intraday time series. The compact option is recommended if you would like to reduce the data size of each API call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "datatype",
+                    "description": "By default, datatype=json. Strings json and csv are accepted with the following specifications: json returns the intraday time series in JSON format; csv returns the time series as a CSV (comma separated value) file.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "e762bd2def40c8fb8f7906f864007ecb",
+            "name": "Daily Time Series Adjusted",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_DAILY_ADJUSTED",
+            "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume, daily adjusted close, and split\/dividend events) of the equity specified, covering up to 20 years of historical data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b068ecbaef06d0c1453c2e169e70e933",
+            "name": "Weekly Time Series",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_WEEKLY",
+            "description": "This API returns weekly time series (last trading day of each week, weekly open, weekly high, weekly low, weekly close, weekly volume) of the equity specified, covering up to 20 years of historical data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2de78493a8e292fb02b79d9890bbe0cd",
+            "name": "Daily Time Series",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_DAILY",
+            "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume) of the equity specified, covering up to 20 years of historical data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "41babab885d6e15c7633d74d6d29b238",
+            "name": "Monthly Time Series",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_MONTHLY",
+            "description": "This API returns monthly time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly volume) of the equity specified, covering up to 20 years of historical data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4dfaac654e09fe5f96be701d6311b59",
+            "name": "Monthly Time Series Adjusted",
+            "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_MONTHLY_ADJUSTED",
+            "description": "This API returns monthly adjusted time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly adjusted close, monthly volume, monthly dividend) of the equity specified, covering up to 20 years of historical data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "fea8851e556d61d54e6ec0d891b99da1",
+            "name": "Batch Stock Quotes",
+            "url": "httpswww.alphavantage.co\/\/query?function=BATCH_STOCK_QUOTES",
+            "description": "The batch stock quotes API enables the querying of multiple stock quotes with a single API request, updated realtime. It may serve as a lightweight alternative to our core stock time series APIs above (which have richer content but are symbol-specific).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbols",
+                    "description": "Up to 100 stock symbols seperated by comma. For example: symbols=MSFT,FB,AAPL. If more than 100 symbols are included, the API will return quotes for the first 100 symbols.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5469b3ffe9aca78ee0aa63c33e7ac9fa",
+            "name": "Currency Exchange Rates",
+            "url": "httpswww.alphavantage.co\/\/query?function=CURRENCY_EXCHANGE_RATE",
+            "description": "Realtime currency exchange rates for physical and digital currencies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "from_currency",
+                    "description": "The currency you would like to get the exchange rate for.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to_currency",
+                    "description": "The destination currency for the exchange rate.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0194c0d46aeb589fefcc944c70fab1df",
+            "name": "Digital Currencies Intraday",
+            "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_INTRADAY",
+            "description": "This API returns the realtime intraday time series (in 5-minute intervals) for any digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan). Prices and volumes are quoted in both the market-specific currency and USD.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "market",
+                    "description": "The exchange market of your choice.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4585d3c38021082452858f178ec0a90f",
+            "name": "Digital Currencies Daily",
+            "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_DAILY",
+            "description": "This API returns the daily historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "market",
+                    "description": "The exchange market of your choice.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb0369cc44c923a7f9de905d30b95612",
+            "name": "Digital Currencies Weekly",
+            "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_WEEKLY",
+            "description": "This API returns the weekly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "market",
+                    "description": "The exchange market of your choice.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec381eb9e6d78b00fff8b037d3998976",
+            "name": "Digital Currencies Monthly",
+            "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_MONTHLY",
+            "description": "This API returns the monthly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "market",
+                    "description": "The exchange market of your choice.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "e75d777683dc56d800bb1a2f62d7bda7",
+            "name": "Simple Moving Average (SMA)",
+            "url": "httpswww.alphavantage.co\/\/query?function=SMA",
+            "description": "This API returns the simple moving average (SMA) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_type",
+                    "description": "The desired price type in the time series. Four types are supported: close, open, high, low",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5956dcc1135fead1fb9d5200216de31d",
+            "name": "Exponential Moving Average (EMA) ",
+            "url": "httpswww.alphavantage.co\/\/query?function=EMA",
+            "description": "This API returns the exponential moving average (EMA) ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_type",
+                    "description": "The desired price type in the time series. Four types are supported: close, open, high, low",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b3c278efecc535d6bb958d5582bff1ac",
+            "name": "Moving Average Convergence \/ Divergence (MACD)",
+            "url": "httpswww.alphavantage.co\/\/query?function=MACD",
+            "description": "This API returns the moving average convergence \/ divergence (MACD) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_type",
+                    "description": "The desired price type in the time series. Four types are supported: close, open, high, low",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "69462e482668e4942ff50dfc4b3b666b",
+            "name": "Stochastic Oscillator (STOCH)",
+            "url": "httpswww.alphavantage.co\/\/query?function=STOCH",
+            "description": "This API returns the stochastic oscillator (STOCH) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0774c2d71764a6ed8c0a063153f3fc4b",
+            "name": "Relative Strength Index (RSI)",
+            "url": "httpswww.alphavantage.co\/\/query?function=RSI",
+            "description": "This API returns the relative strength index (RSI) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_type",
+                    "description": "The desired price type in the time series. Four types are supported: close, open, high, low",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "116cc17a161789fb30816ffbf5029a07",
+            "name": "Average Directional Movement Index (ADX)",
+            "url": "httpswww.alphavantage.co\/\/query?function=ADX",
+            "description": "This API returns the average directional movement index (ADX) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c61694a0be2f2b59d8ae49edbf4ea888",
+            "name": "Commodity Channel Index (CCI) ",
+            "url": "httpswww.alphavantage.co\/\/query?function=CCI",
+            "description": "This API returns the commodity channel index (CCI) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f77fd823f623400d0ab33040ad24b5c8",
+            "name": "Aroon (AROON)",
+            "url": "httpswww.alphavantage.co\/\/query?function=AROON",
+            "description": "This API returns the Aroon (AROON) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb34e647baaab01988d8bb27dca6b8e7",
+            "name": "Bollinger bands (BBANDS)",
+            "url": "httpswww.alphavantage.co\/\/query?function=BBANDS",
+            "description": "This API returns the Bollinger bands (BBANDS) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time_period",
+                    "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_type",
+                    "description": "The desired price type in the time series. Four types are supported: close, open, high, low",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "363fffbecd9aabbf64fb1fdecb86ff30",
+            "name": "Chaikin A\/D line (AD)",
+            "url": "httpswww.alphavantage.co\/\/query?function=AD",
+            "description": "This API returns the Chaikin A\/D line (AD) values. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "cbbcdda537cd75064986172ebb490521",
+            "name": "Balance Volume (OBV)",
+            "url": "httpswww.alphavantage.co\/\/query?function=OBV",
+            "description": "This API returns the on balance volume (OBV) values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "The stocker ticker symbol.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "interval",
+                    "description": "The interval for series (1min, 5min, 15min, 30min, 60min)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        },
+        {
+            "id": "54c728703fca7feb2ed00e4daf0cd5f9",
+            "name": "Sector Performance",
+            "url": "httpswww.alphavantage.co\/\/query?function=SECTOR",
+            "description": "This API returns the realtime and historical sector performances calculated from S&P500 incumbents.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "rawModeData": ""
+        }
+    ]
+}
