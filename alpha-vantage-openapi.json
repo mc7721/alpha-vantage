@@ -1,0 +1,531 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Alpha Vantage",
+        "description": "Alpha Vantage APIs are grouped into four categories: (1) Stock Time Series Data, (2) Physical and Digital\/Crypto Currencies (e.g., Bitcoin), (3) Stock Technical Indicators, and (4) Sector Performances. All APIs are realtime: the latest data points are derived from the current trading day. ",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.alphavantage.co\/"
+    ],
+    "paths": {
+        "\/query?function=TIME_SERIES_INTRADAY": {
+            "get": {
+                "summary": "Intraday Time Series",
+                "description": "This API returns intraday time series (timestamp, open, high, low, close, volume) of the equity specified, updated realtime.",
+                "operationId": "GetIntradayTimeSeries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "outputsize",
+                        "in": "query",
+                        "description": "By default, outputsize=compact. Strings compact and full are accepted with the following specifications: compact returns only the latest 100 data points in the intraday time series; full returns the full-length intraday time series. The compact option is recommended if you would like to reduce the data size of each API call."
+                    },
+                    {
+                        "name": "datatype",
+                        "in": "query",
+                        "description": "By default, datatype=json. Strings json and csv are accepted with the following specifications: json returns the intraday time series in JSON format; csv returns the time series as a CSV (comma separated value) file."
+                    }
+                ]
+            }
+        },
+        "\/query?function=TIME_SERIES_DAILY_ADJUSTED": {
+            "get": {
+                "summary": "Daily Time Series Adjusted",
+                "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume, daily adjusted close, and split\/dividend events) of the equity specified, covering up to 20 years of historical data.",
+                "operationId": "GetDailyTimeSeriesAdjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    }
+                ]
+            }
+        },
+        "\/query?function=TIME_SERIES_WEEKLY": {
+            "get": {
+                "summary": "Weekly Time Series",
+                "description": "This API returns weekly time series (last trading day of each week, weekly open, weekly high, weekly low, weekly close, weekly volume) of the equity specified, covering up to 20 years of historical data.",
+                "operationId": "GetWeeklyTimeSeries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    }
+                ]
+            }
+        },
+        "\/query?function=TIME_SERIES_DAILY": {
+            "get": {
+                "summary": "Daily Time Series",
+                "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume) of the equity specified, covering up to 20 years of historical data.",
+                "operationId": "GetDailyTimeSeries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    }
+                ]
+            }
+        },
+        "\/query?function=TIME_SERIES_MONTHLY": {
+            "get": {
+                "summary": "Monthly Time Series",
+                "description": "This API returns monthly time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly volume) of the equity specified, covering up to 20 years of historical data.",
+                "operationId": "GetMonthlyTimeSeries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    }
+                ]
+            }
+        },
+        "\/query?function=TIME_SERIES_MONTHLY_ADJUSTED": {
+            "get": {
+                "summary": "Monthly Time Series Adjusted",
+                "description": "This API returns monthly adjusted time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly adjusted close, monthly volume, monthly dividend) of the equity specified, covering up to 20 years of historical data.",
+                "operationId": "GetMonthlyTimeSeriesAdjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    }
+                ]
+            }
+        },
+        "\/query?function=BATCH_STOCK_QUOTES": {
+            "get": {
+                "summary": "Batch Stock Quotes",
+                "description": "The batch stock quotes API enables the querying of multiple stock quotes with a single API request, updated realtime. It may serve as a lightweight alternative to our core stock time series APIs above (which have richer content but are symbol-specific).",
+                "operationId": "GetBatchStockQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbols",
+                        "in": "query",
+                        "description": "Up to 100 stock symbols seperated by comma. For example: symbols=MSFT,FB,AAPL. If more than 100 symbols are included, the API will return quotes for the first 100 symbols."
+                    }
+                ]
+            }
+        },
+        "\/query?function=CURRENCY_EXCHANGE_RATE": {
+            "get": {
+                "summary": "Currency Exchange Rates",
+                "description": "Realtime currency exchange rates for physical and digital currencies.",
+                "operationId": "GetCurrencyExchangeRates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "from_currency",
+                        "in": "query",
+                        "description": "The currency you would like to get the exchange rate for."
+                    },
+                    {
+                        "name": "to_currency",
+                        "in": "query",
+                        "description": "The destination currency for the exchange rate."
+                    }
+                ]
+            }
+        },
+        "\/query?function=DIGITAL_CURRENCY_INTRADAY": {
+            "get": {
+                "summary": "Digital Currencies Intraday",
+                "description": "This API returns the realtime intraday time series (in 5-minute intervals) for any digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan). Prices and volumes are quoted in both the market-specific currency and USD.",
+                "operationId": "GetDigitalCurrenciesIntraday",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The exchange market of your choice."
+                    }
+                ]
+            }
+        },
+        "\/query?function=DIGITAL_CURRENCY_DAILY": {
+            "get": {
+                "summary": "Digital Currencies Daily",
+                "description": "This API returns the daily historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+                "operationId": "GetDigitalCurrenciesDaily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The exchange market of your choice."
+                    }
+                ]
+            }
+        },
+        "\/query?function=DIGITAL_CURRENCY_WEEKLY": {
+            "get": {
+                "summary": "Digital Currencies Weekly",
+                "description": "This API returns the weekly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+                "operationId": "GetDigitalCurrenciesWeekly",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The exchange market of your choice."
+                    }
+                ]
+            }
+        },
+        "\/query?function=DIGITAL_CURRENCY_MONTHLY": {
+            "get": {
+                "summary": "Digital Currencies Monthly",
+                "description": "This API returns the monthly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
+                "operationId": "GetDigitalCurrenciesMonthly",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The exchange market of your choice."
+                    }
+                ]
+            }
+        },
+        "\/query?function=SMA": {
+            "get": {
+                "summary": "Simple Moving Average (SMA)",
+                "description": "This API returns the simple moving average (SMA) values.",
+                "operationId": "GetSimpleMovingAverage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    },
+                    {
+                        "name": "series_type",
+                        "in": "query",
+                        "description": "The desired price type in the time series. Four types are supported: close, open, high, low"
+                    }
+                ]
+            }
+        },
+        "\/query?function=EMA": {
+            "get": {
+                "summary": "Exponential Moving Average (EMA) ",
+                "description": "This API returns the exponential moving average (EMA) ",
+                "operationId": "GetExponentialMovingAverage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    },
+                    {
+                        "name": "series_type",
+                        "in": "query",
+                        "description": "The desired price type in the time series. Four types are supported: close, open, high, low"
+                    }
+                ]
+            }
+        },
+        "\/query?function=MACD": {
+            "get": {
+                "summary": "Moving Average Convergence \/ Divergence (MACD)",
+                "description": "This API returns the moving average convergence \/ divergence (MACD) values.",
+                "operationId": "GetMovingAverageConvergenceDivergence",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    },
+                    {
+                        "name": "series_type",
+                        "in": "query",
+                        "description": "The desired price type in the time series. Four types are supported: close, open, high, low"
+                    }
+                ]
+            }
+        },
+        "\/query?function=STOCH": {
+            "get": {
+                "summary": "Stochastic Oscillator (STOCH)",
+                "description": "This API returns the stochastic oscillator (STOCH) values.",
+                "operationId": "GetStochasticOscillator",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=RSI": {
+            "get": {
+                "summary": "Relative Strength Index (RSI)",
+                "description": "This API returns the relative strength index (RSI) values.",
+                "operationId": "GetRelativeStrengthIndex",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    },
+                    {
+                        "name": "series_type",
+                        "in": "query",
+                        "description": "The desired price type in the time series. Four types are supported: close, open, high, low"
+                    }
+                ]
+            }
+        },
+        "\/query?function=ADX": {
+            "get": {
+                "summary": "Average Directional Movement Index (ADX)",
+                "description": "This API returns the average directional movement index (ADX) values.",
+                "operationId": "GetAverageDirectionalMovementIndex",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=CCI": {
+            "get": {
+                "summary": "Commodity Channel Index (CCI) ",
+                "description": "This API returns the commodity channel index (CCI) values.",
+                "operationId": "GetCommodityChannelIndex",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=AROON": {
+            "get": {
+                "summary": "Aroon (AROON)",
+                "description": "This API returns the Aroon (AROON) values.",
+                "operationId": "GetArroon",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=BBANDS": {
+            "get": {
+                "summary": "Bollinger bands (BBANDS)",
+                "description": "This API returns the Bollinger bands (BBANDS) values.",
+                "operationId": "GetbollingerBands",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    },
+                    {
+                        "name": "time_period",
+                        "in": "query",
+                        "description": "Number of data points used to calculate each moving average value. Positive integers are accepted (e.g., time_period=60, time_period=200)"
+                    },
+                    {
+                        "name": "series_type",
+                        "in": "query",
+                        "description": "The desired price type in the time series. Four types are supported: close, open, high, low"
+                    }
+                ]
+            }
+        },
+        "\/query?function=AD": {
+            "get": {
+                "summary": "Chaikin A\/D line (AD)",
+                "description": "This API returns the Chaikin A\/D line (AD) values. ",
+                "operationId": "GetChalkinADLine",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=OBV": {
+            "get": {
+                "summary": "Balance Volume (OBV)",
+                "description": "This API returns the on balance volume (OBV) values.",
+                "operationId": "GetBalanceVolume",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "query",
+                        "description": "The stocker ticker symbol."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval for series (1min, 5min, 15min, 30min, 60min)"
+                    }
+                ]
+            }
+        },
+        "\/query?function=SECTOR": {
+            "get": {
+                "summary": "Sector Performance",
+                "description": "This API returns the realtime and historical sector performances calculated from S&P500 incumbents.",
+                "operationId": "GetSectorPerformance",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
