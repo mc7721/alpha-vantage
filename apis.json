@@ -14,8 +14,8 @@
         "relative data",
         "stocks"
     ],
-    "created": "2019-12-18",
-    "modified": "2019-12-18",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/alpha-vantage\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -33,17 +33,17 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/alpha-vantage-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/alpha-vantage-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/alpha-vantage\/master\/alpha-vantage-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Command Line Interface",
             "url": "https:\/\/www.npmjs.com\/package\/alpha-vantage-cli"
