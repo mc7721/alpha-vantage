@@ -1,5 +1,5 @@
 {
-    "id": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+    "id": "03eaae1c4caae52097c176d99872e944",
     "name": "Alpha Vantage",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3b93c67569c98d83d45ff8e91da69a8c",
+            "id": "6dcdf1ce052d29b02a83d81de57bde1d",
             "name": "Intraday Time Series",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_INTRADAY",
             "description": "This API returns intraday time series (timestamp, open, high, low, close, volume) of the equity specified, updated realtime.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "e762bd2def40c8fb8f7906f864007ecb",
+            "id": "16ffe45b0e83e4cebf38f6021842359d",
             "name": "Daily Time Series Adjusted",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_DAILY_ADJUSTED",
             "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume, daily adjusted close, and split\/dividend events) of the equity specified, covering up to 20 years of historical data.",
@@ -89,11 +89,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "b068ecbaef06d0c1453c2e169e70e933",
+            "id": "15c6c9d01c3c655b9037fbe54b12ddee",
             "name": "Weekly Time Series",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_WEEKLY",
             "description": "This API returns weekly time series (last trading day of each week, weekly open, weekly high, weekly low, weekly close, weekly volume) of the equity specified, covering up to 20 years of historical data.",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "2de78493a8e292fb02b79d9890bbe0cd",
+            "id": "0f66ede3a02a89f11f42f62bca8e5a55",
             "name": "Daily Time Series",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_DAILY",
             "description": "This API returns daily time series (date, daily open, daily high, daily low, daily close, daily volume) of the equity specified, covering up to 20 years of historical data.",
@@ -151,11 +151,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "41babab885d6e15c7633d74d6d29b238",
+            "id": "f83eaa96669f7eb8b8e0ebacbccf302a",
             "name": "Monthly Time Series",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_MONTHLY",
             "description": "This API returns monthly time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly volume) of the equity specified, covering up to 20 years of historical data.",
@@ -182,11 +182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "f4dfaac654e09fe5f96be701d6311b59",
+            "id": "64063e382447a9b4946e4096dc9c8c10",
             "name": "Monthly Time Series Adjusted",
             "url": "httpswww.alphavantage.co\/\/query?function=TIME_SERIES_MONTHLY_ADJUSTED",
             "description": "This API returns monthly adjusted time series (last trading day of each month, monthly open, monthly high, monthly low, monthly close, monthly adjusted close, monthly volume, monthly dividend) of the equity specified, covering up to 20 years of historical data.",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "fea8851e556d61d54e6ec0d891b99da1",
+            "id": "bbdf2f53cb507fc0fb77b428557a8e51",
             "name": "Batch Stock Quotes",
             "url": "httpswww.alphavantage.co\/\/query?function=BATCH_STOCK_QUOTES",
             "description": "The batch stock quotes API enables the querying of multiple stock quotes with a single API request, updated realtime. It may serve as a lightweight alternative to our core stock time series APIs above (which have richer content but are symbol-specific).",
@@ -244,11 +244,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "5469b3ffe9aca78ee0aa63c33e7ac9fa",
+            "id": "8143e5dcf8a7221dfbe1f2abb59e267f",
             "name": "Currency Exchange Rates",
             "url": "httpswww.alphavantage.co\/\/query?function=CURRENCY_EXCHANGE_RATE",
             "description": "Realtime currency exchange rates for physical and digital currencies.",
@@ -282,11 +282,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "0194c0d46aeb589fefcc944c70fab1df",
+            "id": "adefe6ddd0f1d95066661ef1122b47f6",
             "name": "Digital Currencies Intraday",
             "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_INTRADAY",
             "description": "This API returns the realtime intraday time series (in 5-minute intervals) for any digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan). Prices and volumes are quoted in both the market-specific currency and USD.",
@@ -320,11 +320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "4585d3c38021082452858f178ec0a90f",
+            "id": "83181987da278329a3056bc58cf45ca8",
             "name": "Digital Currencies Daily",
             "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_DAILY",
             "description": "This API returns the daily historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
@@ -358,11 +358,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "bb0369cc44c923a7f9de905d30b95612",
+            "id": "65641454e96c84bfd423b64a7b69c3ae",
             "name": "Digital Currencies Weekly",
             "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_WEEKLY",
             "description": "This API returns the weekly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
@@ -396,11 +396,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "ec381eb9e6d78b00fff8b037d3998976",
+            "id": "64673c2e9e3448862c2975dc62c58a3b",
             "name": "Digital Currencies Monthly",
             "url": "httpswww.alphavantage.co\/\/query?function=DIGITAL_CURRENCY_MONTHLY",
             "description": "This API returns the monthly historical time series for a digital currency (e.g., BTC) traded on a specific market (e.g., CNY\/Chinese Yuan), refreshed daily at midnight (UTC). Prices and volumes are quoted in both the market-specific currency and USD.",
@@ -434,11 +434,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "e75d777683dc56d800bb1a2f62d7bda7",
+            "id": "36aef4bb02190cd185038e11f36e9aaf",
             "name": "Simple Moving Average (SMA)",
             "url": "httpswww.alphavantage.co\/\/query?function=SMA",
             "description": "This API returns the simple moving average (SMA) values.",
@@ -486,11 +486,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "5956dcc1135fead1fb9d5200216de31d",
+            "id": "9279d6e64106e2b31895c60f469902d0",
             "name": "Exponential Moving Average (EMA) ",
             "url": "httpswww.alphavantage.co\/\/query?function=EMA",
             "description": "This API returns the exponential moving average (EMA) ",
@@ -538,11 +538,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "b3c278efecc535d6bb958d5582bff1ac",
+            "id": "d659f09c36a074acc0945230aafee4be",
             "name": "Moving Average Convergence \/ Divergence (MACD)",
             "url": "httpswww.alphavantage.co\/\/query?function=MACD",
             "description": "This API returns the moving average convergence \/ divergence (MACD) values.",
@@ -590,11 +590,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "69462e482668e4942ff50dfc4b3b666b",
+            "id": "316513dba127edb0baa0b47563c265fa",
             "name": "Stochastic Oscillator (STOCH)",
             "url": "httpswww.alphavantage.co\/\/query?function=STOCH",
             "description": "This API returns the stochastic oscillator (STOCH) values.",
@@ -628,11 +628,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "0774c2d71764a6ed8c0a063153f3fc4b",
+            "id": "7ea8ac091dc066027b0b1a5b41263673",
             "name": "Relative Strength Index (RSI)",
             "url": "httpswww.alphavantage.co\/\/query?function=RSI",
             "description": "This API returns the relative strength index (RSI) values.",
@@ -680,11 +680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "116cc17a161789fb30816ffbf5029a07",
+            "id": "295209115d4d2919160d7af361063953",
             "name": "Average Directional Movement Index (ADX)",
             "url": "httpswww.alphavantage.co\/\/query?function=ADX",
             "description": "This API returns the average directional movement index (ADX) values.",
@@ -725,11 +725,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "c61694a0be2f2b59d8ae49edbf4ea888",
+            "id": "92cb15e8c644936228c852b9b5a3d373",
             "name": "Commodity Channel Index (CCI) ",
             "url": "httpswww.alphavantage.co\/\/query?function=CCI",
             "description": "This API returns the commodity channel index (CCI) values.",
@@ -770,11 +770,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "f77fd823f623400d0ab33040ad24b5c8",
+            "id": "3f20d101d8d94d235936dcc2ec8b9ea0",
             "name": "Aroon (AROON)",
             "url": "httpswww.alphavantage.co\/\/query?function=AROON",
             "description": "This API returns the Aroon (AROON) values.",
@@ -815,11 +815,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "cb34e647baaab01988d8bb27dca6b8e7",
+            "id": "811131d2aa9bfaea619e288ab0f82909",
             "name": "Bollinger bands (BBANDS)",
             "url": "httpswww.alphavantage.co\/\/query?function=BBANDS",
             "description": "This API returns the Bollinger bands (BBANDS) values.",
@@ -867,11 +867,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "363fffbecd9aabbf64fb1fdecb86ff30",
+            "id": "6cb4487e49e3a25352e0d3a0d097734a",
             "name": "Chaikin A\/D line (AD)",
             "url": "httpswww.alphavantage.co\/\/query?function=AD",
             "description": "This API returns the Chaikin A\/D line (AD) values. ",
@@ -905,11 +905,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "cbbcdda537cd75064986172ebb490521",
+            "id": "d8a456243261422d75a6a23e2e48c2e3",
             "name": "Balance Volume (OBV)",
             "url": "httpswww.alphavantage.co\/\/query?function=OBV",
             "description": "This API returns the on balance volume (OBV) values.",
@@ -943,11 +943,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         },
         {
-            "id": "54c728703fca7feb2ed00e4daf0cd5f9",
+            "id": "a42af06dba9792cf54f1b5f6dd6a2482",
             "name": "Sector Performance",
             "url": "httpswww.alphavantage.co\/\/query?function=SECTOR",
             "description": "This API returns the realtime and historical sector performances calculated from S&P500 incumbents.",
@@ -966,7 +966,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dbc4ea2e871ed045ee9f6d92f51adbd8",
+            "collectionId": "03eaae1c4caae52097c176d99872e944",
             "rawModeData": ""
         }
     ]
